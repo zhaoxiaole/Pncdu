@@ -90,7 +90,7 @@ def input_op(result):
 			pass
 			for x in del_list:
 				print 'rm -f %s' % result[x][0]
-				os.system('rm -f %s' % x)
+				os.system("rm -f %s" % result[x][0])
 	input_op(result)
 exclude, cdir, top='','',10
 if len(sys.argv)==1:
