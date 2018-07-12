@@ -92,7 +92,6 @@ def input_op(result):
 		while rm_input not in ['Y','n']:
 			rm_input=raw_input('rm those %s files?Y/n:' % len(del_list))
 		if rm_input=='Y':
-			pass
 			for x in del_list:
 				print 'rm -f %s' % result[x][0]
 				os.system("rm -f %s" % result[x][0])
