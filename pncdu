@@ -58,9 +58,12 @@ def get_top_file(cdir,exclude,top):
 		print '%s %s %s' % (result.index(x)+1,x[0],size)
 	input_op(result)
 def input_op(result):
-	val=raw_input('input your operation(q=quit|delfile n-top):\n')
+	val=raw_input('input your operation(q=quit|research|delfile n-top):\n')
 	if val in ['q','exit','quit']:
 		exit(0)
+	if val=='research':
+		file_size.clear()
+		get_top_file(cdir,exclude,top)
 	input_list=str(val).split(' ')
 	del_list=[]
 	for arg in input_list:
@@ -86,6 +89,8 @@ def input_op(result):
 		for x in del_list:
 			print '%s %s' % (del_list.index(x)+1,result[x][0])
 		rm_input=raw_input('rm those %s files?Y/n:' % len(del_list))
+		while rm_input not in ['Y','n']:
+			rm_input=raw_input('rm those %s files?Y/n:' % len(del_list))
 		if rm_input=='Y':
 			pass
 			for x in del_list:
