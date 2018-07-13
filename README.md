@@ -1,28 +1,33 @@
 # Pncdu
-pncduÊÇ»ùÓÚncdu¹¤¾ßÊµÏÖ¿ìËÙ»ñÈ¡Â·¾¶ÏÂtop nµÄ´óÎÄ¼ş£¬¸ù¾İ×Ô¼ºµÄÕ¹Ê¾µÄÎÄ¼şÁĞ±í¿ìËÙÑ¡ÔñÉ¾³ıµÄÎÄ¼ş
+pncduæ˜¯åŸºäºncduå·¥å…·å®ç°å¿«é€Ÿè·å–è·¯å¾„ä¸‹top nçš„å¤§æ–‡ä»¶ï¼Œæ ¹æ®è‡ªå·±çš„å±•ç¤ºçš„æ–‡ä»¶åˆ—è¡¨å¿«é€Ÿé€‰æ‹©åˆ é™¤çš„æ–‡ä»¶
 
-ÏµÍ³ĞèÇó
+ç³»ç»Ÿéœ€æ±‚
 
-²Ù×÷ÏµÍ³£ºLinux Python >= 2.6 ncdu >= 1.9
+æ“ä½œç³»ç»Ÿï¼šLinux Python >= 2.6 ncdu >= 1.9
 
-×¢Òâ£º±ØĞëÏÈ°²×°ncdu¹¤¾ß£¬centos¿ÉÒÔÊ¹ÓÃyum install -y ncdu°²×°£¬»òÀëÏß°²×°£¬Ïê¼û°Ù¶È
+æ³¨æ„ï¼šå¿…é¡»å…ˆå®‰è£…ncduå·¥å…·
 
-ÅäÖÃÈ«¾ÖÃüÁî·½·¨£º
+ä»¥centos6ä¸ºä¾‹ï¼š
+
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+yum install -y ncduå®‰è£…ï¼Œæˆ–ç¦»çº¿å®‰è£…ï¼Œè¯¦è§ç™¾åº¦
+
+é…ç½®å…¨å±€å‘½ä»¤æ–¹æ³•ï¼š
 cp pncdu /usr/bin/pncdu
 
-Ê¹ÓÃ·½·¨
+ä½¿ç”¨æ–¹æ³•
 --------------------------------
 | args |  note |
 |--------|-------|
-|-h/--help|Ê¹ÓÃ°ïÖú|
-|-v/--version|°æ±¾ĞÅÏ¢|
-|-t|´óÎÄ¼ştop n|
-|-d|Â·¾¶|
-|-e|ÅÅ³ıÔÚÍâµÄÎÄ¼ş¹Ø¼ü×Ö|
+|-h/--help|ä½¿ç”¨å¸®åŠ©|
+|-v/--version|ç‰ˆæœ¬ä¿¡æ¯|
+|-t|å¤§æ–‡ä»¶top n|
+|-d|è·¯å¾„|
+|-e|æ’é™¤åœ¨å¤–çš„æ–‡ä»¶å…³é”®å­—|
 
-Ê¹ÓÃ¾ÙÀı£º
+ä½¿ç”¨ä¸¾ä¾‹ï¼š
 
-ÕÒ³ö/tmpÄ¿Â¼ÏÂ´óÎÄ¼şµÄÇ°Îå¸ö£¬ÅÅ³ı.shÎÄ¼ş
+æ‰¾å‡º/tmpç›®å½•ä¸‹å¤§æ–‡ä»¶çš„å‰äº”ä¸ªï¼Œæ’é™¤.shæ–‡ä»¶
 
 pncdu -t 5 -d /tmp -e .sh
 
@@ -38,7 +43,7 @@ pncdu -t 5 -d /tmp -e .sh
 
 5 /tmp/yum.log NoneB
 
-input your operation(q=quit|delfile n-top):
+input your operation(q=quit|research|delfile n-top):
 
 delfile 1,3,4-5
 
@@ -62,7 +67,7 @@ rm -f /tmp/ks-script-aTJtZ6
 
 rm -f /tmp/yum.log
 
-input your operation(q=quit|delfile n-top):
+input your operation(q=quit|research|delfile n-top):
 
 q
 
